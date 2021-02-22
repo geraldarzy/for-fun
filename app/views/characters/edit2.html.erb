@@ -1,0 +1,18 @@
+Here is the 2nd form_for tag that we first made: <br>
+
+<h3>Edit  character:</h3>
+
+<%= form_tag character_path(@character), method: "put" do %>
+    <label>Character name:</label><br>
+    <%= text_field_tag :name, @character.name %><br>
+  
+    <label>Character color:</label><br>
+    <%= text_field_tag :'character[color]', @character.catchphrase %><br>
+  
+    <label>Character catchphrase:</label><br>
+    <%= text_field_tag :catchphrase, @character.catchphrase %><br>
+  
+    <label>Character species:</label><br>
+    <%= text_field_tag :species, @character.species %><br>
+  <%= submit_tag "MAKE THESE CHANGES" %>
+<% end %> 

@@ -1,0 +1,23 @@
+This is the form_tag version 2
+
+<%= form_tag characters_path do %>
+    <label>Character name:</label><br>
+    <%= text_field_tag :name %><br>
+    
+    <label>Character color:</label><br>
+    <%= text_field_tag :color %><br>
+
+    <label>Character catchphrase:</label><br>
+    <%= text_field_tag :catchphrase %><br>
+
+    <label>Character species:</label><br>
+    <%= text_field_tag :species %><br>
+  
+
+  
+    <%= submit_tag "Submit Article" %>
+  <% end %> 
+
+  if false
+    the only difference is that this goes into params without a character key (params[:name]) instead of params[:character][:name]
+  end

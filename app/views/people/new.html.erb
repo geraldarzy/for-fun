@@ -1,0 +1,6 @@
+<h3>Hello! Please tell me your name so I can greet you properly :)</h3>
+<%=form_for @person do |f|%>
+    <%=f.text_field :name%>
+
+    <%=f.submit 'Submit'%>
+<%end%>

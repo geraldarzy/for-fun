@@ -1,0 +1,20 @@
+Here is the 1st form_for tag that we first made: <br>
+
+<h3>Edit  character:</h3>
+hello
+
+<%= form_for @character do |f| %>
+    <%= f.label 'Character name' %><br>
+    <%= f.text_field :name %><br>
+
+    <%= f.label 'Character color' %><br>
+    <%= f.text_field :color %><br>
+    
+    <%= f.label 'Character catchphrase' %><br>
+    <%= f.text_field :catchphrase %><br>
+
+    <%= f.label 'Character species' %><br>
+    <%= f.text_field :species %><br>
+  
+    <%= f.submit "Make changes to character" %>
+  <% end %> 
